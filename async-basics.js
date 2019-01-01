@@ -20,5 +20,6 @@ app.get('/about',(req,res)=>{
         a:'hai dude'
     });
 });
+const port = process.env.PORT || 3000;
 app.use(express.static(__dirname));
-app.listen(3000);
+app.listen(port);
